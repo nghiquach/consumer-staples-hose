@@ -5,7 +5,7 @@
 ---
 ## Báo cáo phân tích chi tiết (PDF)
 Xem toàn bộ slide báo cáo trình bày trực quan và diễn giải chi tiết tại đây:
-**[Mở Báo cáo Phân tích Ngành Hàng tiêu dùng thiết yếu (PDF)](./report/Bao_Cao_Phan_Tich_Consumer_Staples.pdf)**
+**[Mở Báo cáo Phân tích Ngành Hàng tiêu dùng thiết yếu (PDF)](<./report/Consumer Staples_Quách Quỳnh Thục Nghi.pdf>)**
 
 ## 1. Câu hỏi kinh doanh
 
