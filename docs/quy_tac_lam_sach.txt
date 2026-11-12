@@ -1,0 +1,13 @@
+Bỏ khoảng trắng và viết hoa mã cổ phiếu, vì “vnm” và “VNM “ sẽ bị coi là hai mã.
+Bỏ dòng trùng theo cặp Mã và Ngày, giữ dòng đầu tiên.
+Đọc mọi cột ở dạng chữ trước khi đổi sang số. Bảng giá dùng dấu phẩy làm dấu thập phân (7,1); bảng ngành dùng dấu phẩy làm dấu ngăn nghìn (10,451,182) nên xử lý khác nhau.
+Ghép hai file giá thành một bảng, sắp xếp tăng dần theo Mã và Ngày.
+Giá thiếu hoặc bằng 0: điền bằng giá phiên trước theo từng mã, vì giá là chuỗi liên tục; không dùng trung bình. Dòng đầu chuỗi của mã bị thiếu thì bỏ dòng đó.
+Khối lượng và giá trị thiếu: điền 0, vì thiếu nghĩa là không có giao dịch; không dùng giá trị phiên trước vì sẽ tạo dòng tiền giả.
+Quy mô công ty (KL lưu hành): điền xuôi rồi điền ngược, vì là giá trị tĩnh.
+Gộp bảng ngành bằng left join: giữ mọi mã trên sàn, mã thuộc ngành tiêu dùng có Is_Staples = 1.
+Phân nhóm mã: Qua_ngan (dưới 60 phiên); Niem_yet_moi (ngày niêm yết muộn hơn 21/10/2024, hoặc từ 60 đến 442 phiên); Day_du (từ 443 phiên, tức 90% của 492 phiên chuẩn). Dòng có ngày sớm hơn ngày niêm yết được gắn cờ Truoc_ngay_niem_yet. Chỉ so sánh lợi nhuận và Max Drawdown trong cùng nhóm.
+Gắn cờ Co_gian_doan cho mã thiếu phiên trong khoảng giao dịch của chính nó, và Ngay_thieu_du_lieu cho ngày có số mã giao dịch dưới 90% trung vị. Không điền giá vào phiên thiếu.
+Kiểm tra chỗ nối hai file: tại 20/10/2025 có 0/393 mã vượt ngưỡng 7,5%, nên không phát hiện lệch giá.
+Ngưỡng 7,5% (7% biên độ HOSE cộng 0,5 điểm dung sai) chỉ dùng để gắn cờ Nghi_van_bien_do, không xóa dữ liệu.
+ 

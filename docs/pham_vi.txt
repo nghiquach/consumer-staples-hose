@@ -1,0 +1,23 @@
+1. Câu hỏi kinh doanh
+Toàn cảnh giao dịch của thị trường trong 2 năm.
+Làm sao để tăng hiệu suất sinh lời của danh mục cổ phiếu ngành Hàng tiêu dùng thiết yếu trên sàn HOSE, đồng thời tránh các giai đoạn sụt giảm mạnh và các cổ phiếu có nguy cơ mất thanh khoản?
+
+2. Phạm vi
+
+Dữ liệu: toàn bộ sàn HOSE, từ 21/10/2024 đến 16/10/2026. Ngành phân tích chuyên sâu: Consumer Staples gồm 35 doanh nghiệp lấy từ https://www.hsx.vn/vi/quan-ly-niem-yet/co-phieu
+Nguồn: https://cafef.vn/du-lieu/lich-su-giao-dich/hose/all-1.chn.
+
+MCH niêm yết trên HOSE từ 10/12/2025; dữ liệu trước ngày đó nhiều khả năng thuộc giai đoạn giao dịch ngoài HOSE và được đánh dấu bằng cờ Truoc_ngay_niem_yet.
+
+Ngày 02/02/2026 có 34 mã biến động giá vượt 7,5% trong ngày; số liệu khớp với tin thị trường nhưng cơ chế biên độ chưa được xác minh; các dòng này được giữ lại và gắn cờ.
+
+3. Định nghĩa
+
+Rủi ro giá: đo bằng biên độ giật giá trong phiên (Intraday_Volatility) và mức sụt giảm sâu nhất từ đỉnh (Max_Drawdown).
+Rủi ro thanh khoản: đo bằng tỷ lệ quay vòng cổ phiếu (Turnover_Ratio) và số phiên không có giao dịch (Zero_Volume_Days).
+
+4. Giới hạn đã biết
+- Ngành chỉ có 35 mã nên kết luận mang tính mô tả, không phải khuyến nghị đầu tư. Dữ liệu 2 năm, chưa có dữ liệu báo cáo tài chính.
+- Một số mã niêm yết mới có ít phiên (ví dụ AAN từ 05/2026) nên được đánh dấu riêng khi so sánh.
+- Khối lượng lưu hành lấy tại một thời điểm duy nhất nên Turnover_Ratio là giá trị gần đúng, vì khối lượng lưu hành có thể thay đổi theo thời gian.
+- Danh sách ngành lấy từ hsx.vn; các mã không có trong dữ liệu giá sẽ được ghi rõ và loại khỏi phân tích

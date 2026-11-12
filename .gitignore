@@ -1,0 +1,17 @@
+﻿# Bỏ qua dữ liệu đã xử lý (có thể tái tạo bằng code trong src/)
+data/processed/
+*.db
+*.sqlite
+*.parquet
+
+# Rác hệ thống & file tạm khi mở Excel
+.DS_Store
+Thumbs.db
+~$*.xlsx
+
+# Môi trường Python & VS Code
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.vscode/
+.env

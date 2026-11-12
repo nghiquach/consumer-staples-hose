@@ -1,0 +1,23 @@
+File lich_su_gia:
+Tên các cột:Mã, Ngày, Giá đóng cửa, Giá điều chỉnh, Thay đổi,Khối lượng khớp lệnh, Giá trị khớp lệnh, Khối lượng thỏa thuận, Giá trị thỏa thuận, Giá mở cửa, Giá cao nhất, Giá thấp nhất
+Tổng số dòng: 96810 (kể cả tiêu đề) cho năm 2024-2025 và 98460 (kể cả tiêu đề) cho năm 2025-2026
+Ngày đầu tiên:21/10/2024, ngày cuối cùng 17/10/2025 
+Định dạng ngày theo dạng dd/mm/yyy (vd: 17/10/2025)
+Số lượng cổ phiếu khác nhau: 400 CHO NẰM 2024-2025 VÀ 413 cho năm 2025-2026
+Các sô thập phân được ngăn cách với nhau bằng dấu phẩy, các số hàng nghìn không có. Không có kí tự trống
+
+File consmer_staples:
+Tên các cột: MÃ CK, MÃ ISIN, MÃ FIGI, TÊN DN NIÊM YẾT, KL ĐĂNG KÝ NIÊM YẾT, KL LƯU HÀNH, NGÀY NIÊM YẾT
+Số doanh nghiệp: 35
+3. Hiện chưa thấy cột mã lạ
+4. Khối lượng lưu hành đang lưu dưới dạng text (nằm căn lề bên trái) và có dấu phẩy để ngan cách
+
+Nhận xét: số thập phân dùng dấu phẩy; giá tính theo nghìn đồng; giá trị khớp lệnh tính theo tỷ đồng và chỉ có 2 số lẻ; dữ liệu đang xếp ngày mới nhất lên đầu.
+
+
+Sau khi ghép file:
+Tổng số mã sau ghép: 419
+
+Ngày nối giữa hai file: ngày cuối cùng của file 2024-2025 là ngày 17/10/2025 và ngày đầu của file 2025-2026 là ngày 20/10/2025
+
+Hai file không có ngày trùng nên không so sánh trực tiếp được giá điều chỉnh; sẽ kiểm tra gián tiếp bằng lợi nhuận ngày 20/10/2025.
