@@ -4,12 +4,12 @@
 
 ---
 ## Báo cáo phân tích chi tiết (PDF)
-Xem toàn bộ slide báo cáo trình bày trực quan và diễn giải chi tiết tại đây:
+Xem toàn bộ báo cáo trình bày trực quan và diễn giải chi tiết tại đây:
 **[Mở Báo cáo Phân tích Ngành Hàng tiêu dùng thiết yếu (PDF)](<./report/Consumer Staples_Quách Quỳnh Thục Nghi.pdf>)**
 
 ## 1. Câu hỏi kinh doanh
 
-1. Toàn cảnh giao dịch của thị trường trong 2 năm như thế nào, và ngành tiêu dùng thiết yếu chiếm bao nhiêu dòng tiền?
+1. Toàn cảnh giao dịch của thị trường trong 2 năm như thế nào, và ngành tiêu dùng thiết yếu chiếm % bao nhiêu dòng tiền?
 2. Làm sao tăng hiệu suất sinh lời của danh mục cổ phiếu ngành Hàng tiêu dùng thiết yếu, đồng thời **tránh các giai đoạn sụt giảm mạnh** và **các cổ phiếu có nguy cơ mất thanh khoản**?
 
 ## 2. Phạm vi & nguồn dữ liệu
@@ -17,7 +17,7 @@ Xem toàn bộ slide báo cáo trình bày trực quan và diễn giải chi ti�
 | Hạng mục | Chi tiết |
 |---|---|
 | Thị trường | Toàn sàn HOSE (419 mã sau khi ghép 2 file giá) |
-| Ngành phân tích sâu | Consumer Staples – 35 doanh nghiệp (danh sách từ [hsx.vn](https://www.hsx.vn/vi/quan-ly-niem-yet/co-phieu)) |
+| Ngành tiêu dùng  | Consumer Staples – 35 doanh nghiệp (danh sách từ [hsx.vn](https://www.hsx.vn/vi/quan-ly-niem-yet/co-phieu)) |
 | Lịch sử giá | [CafeF – Lịch sử giao dịch HOSE](https://cafef.vn/du-lieu/lich-su-giao-dich/hose/all-1.chn) |
 | Thời gian | 21/10/2024 → 16/10/2026 (492 phiên chuẩn) |
 
@@ -31,10 +31,8 @@ Xem toàn bộ slide báo cáo trình bày trực quan và diễn giải chi ti�
 | `ghi_chu_du_lieu.txt` | Ghi chú đặc điểm dữ liệu (định dạng số, ngày, đơn vị…) |
 | `quy_tac_lam_sach.txt` | Quy tắc làm sạch dữ liệu |
 | `pham_vi.txt` | Câu hỏi kinh doanh, phạm vi, định nghĩa, giới hạn |
-| `queries.sql` | 6 truy vấn SQL phân tích |
-| `Truy_vấn_1.csv … Truy_vấn_6.csv` | Kết quả của 6 truy vấn |
-| `inssight_nhap.txt` | Bản nháp các phát hiện (insight) |
-| `cho_chua_hieu.txt` | Danh sách các điểm cần tìm hiểu thêm (xem mục 8) |
+| `queries.sql` | 8 truy vấn SQL phân tích |
+| `Truy_vấn_1.csv … Truy_vấn_8.csv` | Kết quả của 8 truy vấn |
 
 ## 3. Đặc điểm dữ liệu thô
 
@@ -88,11 +86,11 @@ Xem toàn bộ slide báo cáo trình bày trực quan và diễn giải chi ti�
 Tổng hợp từ 8 truy vấn SQL và 10 biểu đồ trực quan hóa xoay quanh 3 luận điểm chính:
 
 ### 1. Phân bổ vĩ mô: Ngành Tiêu dùng mất dần sức hút dòng tiền khi thị trường sôi động
-* **Tỷ trọng dòng tiền thu hẹp:** Dòng tiền toàn sàn đạt đỉnh 966 nghìn tỷ đồng vào tháng 08/2025, nhưng tỷ trọng chảy vào nhóm Consumer Staples lại biến động thất thường và giảm từ mức trung bình **7,6%** (11/2024 – 04/2025) xuống còn **5,5%** (04/2026 – 09/2026) (Hình 1).
+* **Ngành tiêu dùng không còn là an toàn để "trú ẩn":** Dòng tiền toàn sàn đạt đỉnh 966 nghìn tỷ đồng vào tháng 08/2025, nhưng tỷ trọng chảy vào nhóm Consumer Staples lại biến động thất thường và giảm từ mức trung bình **7,6%** (11/2024 – 04/2025) xuống còn **5,5%** (04/2026 – 09/2026) (Hình 1).
 * **Tăng chậm hơn, giảm sâu hơn thị trường:** Khi quy về cùng gốc 100 tại tháng 11/2024, dòng tiền toàn sàn tăng gấp **3,8 lần** ở đỉnh và giữ mức **104** vào cuối kỳ (09/2026); trong khi ngành tiêu dùng chỉ đạt đỉnh **2,9 lần** và lùi sâu về mốc **69** (Hình 2). Định kiến "ngành phòng thủ tự hút tiền khi thị trường biến động" không đúng trong giai đoạn này.
 
 ### 2. Lựa chọn cổ phiếu: Kết quả phụ thuộc chủ yếu vào chọn mã, không phải chọn ngành
-* **Bẫy trung bình thống kê:** Lợi nhuận cộng dồn trung bình của 30 mã đủ dữ liệu đạt **+11,7%**, nhưng lợi nhuận trung vị lại âm **−0,2%** (chia đôi chính xác: 15 mã lời, 15 mã lỗ) (Hình 3, 4). Con số trung bình bị kéo lệch bởi hai mã tăng đột biến là **NAF (+142,2%)** và **SBT (+113,9%)**; nếu loại bỏ hai mã này, trung bình ngành chỉ còn **+3,4%** và trung vị giảm về **−4,0%** (Hình 5).
+* **Lợi nhuận trung bình không nói lên sự tăng trưởng toàn ngành :** Lợi nhuận cộng dồn trung bình của 30 mã đủ dữ liệu đạt **+11,7%**, nhưng lợi nhuận trung vị lại âm **−0,2%** (chia đôi chính xác: 15 mã lời, 15 mã lỗ) (Hình 3, 4). Con số trung bình bị kéo lệch bởi hai mã tăng nhiều là **NAF (+142,2%)** và **SBT (+113,9%)**; nếu loại bỏ hai mã này, trung bình ngành chỉ còn **+3,4%** và trung vị giảm về **−4,0%** (Hình 5).
 * **Đánh giá hiệu suất trên mỗi đơn vị rủi ro (Risk-Adjusted Return):** Khi xếp hạng theo tỷ số `Lợi nhuận / |Max Drawdown|`, thứ hạng thay đổi đáng kể: **HSL** (+76,2% nhưng từng sụt −70,4%) tụt từ hạng 3 xuống hạng 9, trong khi **SMB** (+28,4%, sụt chỉ −11,0%) vươn từ hạng 9 lên hạng 5 (Hình 6, 7). **NAF** (tỷ số 7,94) và **SBT** (tỷ số 4,86) giữ vững vị trí dẫn đầu ở cả hai tiêu chí.
 * **Quy mô dòng tiền không đồng nghĩa với sinh lời:** Các mã đầu ngành có giá trị khớp lệnh lớn nhất như **MSN** (226.110 tỷ, lỗ −11,0%), **VNM** (131.579 tỷ, lỗ −3,1%) và **DBC** (lỗ −29,6%) đều ghi nhận hiệu suất âm (Hình 8).
 
